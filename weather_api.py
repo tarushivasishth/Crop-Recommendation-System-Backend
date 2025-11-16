@@ -1,8 +1,13 @@
 import requests
 from datetime import datetime, timedelta
 import pandas as pd
+import os
+from dotenv import load_dotenv
 
-API_KEY = "#########################"   
+load_dotenv()
+
+API_KEY = os.getenv("WEATHER_API_KEY")
+
 
 def get_lat_lon(city):
     """Get latitude and longitude using OpenWeatherMap Geocoding API."""
