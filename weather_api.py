@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 import pandas as pd
 
-API_KEY = "4675b544b969ce8d902014458eda0ec8"   
+API_KEY = "#########################"   
 
 def get_lat_lon(city):
     """Get latitude and longitude using OpenWeatherMap Geocoding API."""
