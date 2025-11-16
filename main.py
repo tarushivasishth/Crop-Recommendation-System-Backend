@@ -8,10 +8,10 @@ from weather_api import get_lat_lon, get_monthly_weather, get_three_month_averag
 
 
 # Load model, encoder, and scaler
-model = tf.keras.models.load_model(r"C:\Users\tarus\minor_project\Crop_Recommendation\models\ann_model.keras")
+model = tf.keras.models.load_model("models/ann_model.keras")
 # model = joblib.load(r"C:\Users\tarus\minor_project\Crop_Recommendation\models\gb_model.pkl")
-encoder = joblib.load(r"C:\Users\tarus\minor_project\Crop_Recommendation\models\label_encoder.pkl")
-scaler = joblib.load(r"C:\Users\tarus\minor_project\Crop_Recommendation\models\scaler.pkl")
+encoder = joblib.load("models/label_encoder.pkl")
+scaler = joblib.load("models/scaler.pkl")
 
 app = FastAPI(title="Agrocast Crop Recommendation")
 
